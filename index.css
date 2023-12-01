@@ -1,0 +1,177 @@
+
+:root{
+  --dark-blue: #000428;
+  --cyan: #0095ff;
+  --dark-cyan: #0048ff;
+  --white: #ffffff;
+}
+button{
+  border-radius:2px;
+  background-color: #27ae60;
+  cursor: pointer;
+  padding: 8px;
+  border: none;
+
+}
+header{
+  background-color:#333;
+  padding:20px;
+  margin:0;
+  color:white;
+  font-size:50px;
+    z-index: 1;
+  transition: top 0.5s;
+   
+  
+}
+
+body{
+  margin: 0;
+  background-color: white;
+  padding: 0;
+}
+footer{
+  background-color:#333;
+  padding:50px;
+  color:white;
+  margin:0;
+  text-align:center;
+  font-size:30px;
+  position:relative;
+  margin-top: auto;
+}
+
+
+
+
+.container{
+  border: 2px solid black;
+  margin:0;
+  background-image:url("https://media.istockphoto.com/id/1473452859/photo/tasty-cheeseburger-glass-of-cola-and-french-fries-on-wooden-tray-close-up.webp?b=1&s=170667a&w=0&k=20&c=AO5BL1L55jnam8yVMVTH0Sj0mnaPNrVaw42q9rgvFps=");
+  background-size:cover;
+  background-position: center;
+  justify-content:center;
+  background-repeat: none;
+  height:400px;
+  
+}
+
+ .grid-container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr); /* Creates four columns with equal width */
+      grid-gap: 1px; /* Adjust the gap between grid items as needed */
+      
+ }
+/* Media query for mobile devices */
+@media only screen and (max-width: 767px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+    .box {
+      padding: 20px;
+      text-align: center;
+      gap:none;
+      width:200px;
+ 
+    }
+
+h2{
+  text-align:center;
+  color: rgba(255, 255, 255, 0.5); /* Set the transparency by adjusting the fourth parameter (0.3 in this example) */
+  font-size:60px;
+  font-family:impact;
+  padding:80px;
+}
+
+h4{
+  font-size:50px;
+  
+}
+
+ h1 {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav {
+            display: inline-block;
+        }
+
+        nav a {
+            color: #fff;
+          font-size:10px;
+            text-decoration: none;
+            padding: 5px 10px;
+            margin-right: 10px;
+          border: 1px solid lightcyan;
+          background-color: black;
+        }
+
+
+
+
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+  html, body {
+  height: 100%;
+  margin: 0;
+}
+  
+  
+
+
+
+
+    #navbar{
+      display:inline-block;
+    }
+
+#mobilenav{
+  display: none;
+  padding:5px;
+  bottom: 0;
+  width: 100%;
+  transition: bottom 0.5s;
+  background-color: var(--dark-blue);
+  position: fixed;
+  
+}
+
+#mobilenav a{
+  background-color: var(--dark-blue);
+
+  text-decoration: none;
+  color:var(--white);
+  display:inline-block;
+  outline: none;
+  font-size: 30px;
+margin-right: 50px;
+  border:none;
+  box-shadow: none;
+}
+
+@media(max-width:769px){
+    #navbar{display: none;}
+
+    
+  
+  #mobilenav{
+      display:block;
+    }
+  
+@media(max-width:280px){
+    #navbar{display: none;}
+
+  @media(max-width:600px){
+    #navbar{display: none;}
+
+    /* Media query for mobile devices */
+@media only screen and (max-width: 767px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
