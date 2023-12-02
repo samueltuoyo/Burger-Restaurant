@@ -22,13 +22,35 @@ if(currentScroll > previousScroll){
 previousScroll = currentScroll;
 })
 
+
 // Add click event listener to each button with a unique ID
   document.getElementById('singleBurgerButton').addEventListener('click', function() {
-    showBurgerAlert('Single');
+    showBurgerAlert('10$');
   });
 
   document.getElementById('doubleBurgerButton').addEventListener('click', function() {
-    showBurgerAlert('Double');
+    showBurgerAlert('12$');
+  });
+
+document.getElementById('3burgerButton').addEventListener('click', function() {
+    showBurgerAlert('4$');
+  });
+document.getElementById('4burgerButton').addEventListener('click', function() {
+    showBurgerAlert('5$');
+  });
+
+document.getElementById('5burgerButton').addEventListener('click', function() {
+    showBurgerAlert('9$');
+  });
+document.getElementById('6burgerButton').addEventListener('click', function() {
+    showBurgerAlert('11$');
+  });
+
+document.getElementById('7burgerButton').addEventListener('click', function() {
+    showBurgerAlert('5$');
+  });
+document.getElementById('8burgerButton').addEventListener('click', function() {
+    showBurgerAlert('5$');
   });
 
   function showBurgerAlert(amount) {
