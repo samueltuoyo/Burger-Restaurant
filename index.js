@@ -22,3 +22,24 @@ if(currentScroll > previousScroll){
 previousScroll = currentScroll;
 })
 
+// Add click event listener to each button with a unique ID
+  document.getElementById('singleBurgerButton').addEventListener('click', function() {
+    showBurgerAlert('Single');
+  });
+
+  document.getElementById('doubleBurgerButton').addEventListener('click', function() {
+    showBurgerAlert('Double');
+  });
+
+  function showBurgerAlert(amount) {
+    // Using SweetAlert2 to create a customized alert
+    Swal.fire({
+      title: 'Burger Alert!',
+      html: `<p>Amount: ${amount}</p><img src="burger.jpg" alt="Burger Photo" style="max-width:100%;">`,
+      confirmButtonText: 'Cool!',
+      position: 'center',
+      customClass: {
+        container: 'my-swal', // Apply the custom style to the SweetAlert2 modal only
+      },
+    });
+  }
