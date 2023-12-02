@@ -109,8 +109,13 @@ h4{
         }
 
 
+.coolButton {
+      padding: 10px;
+    }
 
-
+.my-swal {
+      max-width: 300px; /* Adjust the max-width as needed */
+    }
 
 body {
   display: flex;
