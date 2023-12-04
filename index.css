@@ -19,26 +19,23 @@ header{
   margin:0;
   color:white;
   font-size:50px;
-    z-index: 1;
   transition: top 0.5s;
    
   
 }
 
-body{
+html,body{
   margin: 0;
-  background-color: white;
   padding: 0;
 }
 footer{
   background-color:#333;
-  padding:50px;
+  padding:45px;
   color:white;
   margin:0;
-  text-align:center;
-  font-size:30px;
   position:relative;
   margin-top: auto;
+  margin-bottom: auto;
 }
 
 
@@ -52,16 +49,20 @@ footer{
   background-position: center;
   justify-content:center;
   background-repeat: none;
-  height:400px;
+  height:auto;
   
 }
+
 
  .grid-container {
       display: grid;
       grid-template-columns: repeat(4, 1fr); /* Creates four columns with equal width */
       grid-gap: 1px; /* Adjust the gap between grid items as needed */
-      
+      width:100;
+   margin:0;
  }
+
+
 /* Media query for mobile devices */
 @media only screen and (max-width: 767px) {
   .grid-container {
@@ -71,10 +72,10 @@ footer{
     .box {
       padding: 20px;
       text-align: center;
-      gap:none;
-      width:200px;
- 
-    }
+      margin-right:0;
+      width:130px;
+       box-sizing: border-box;  }
+
 
 h2{
   text-align:center;
@@ -113,9 +114,6 @@ h4{
       padding: 10px;
     }
 
-.my-swal {
-      max-width: 300px; /* Adjust the max-width as needed */
-    }
 
 body {
   display: flex;
@@ -127,9 +125,15 @@ body {
 }
   
   
+.my-swal {
+      max-width: 300px; /* Adjust the max-width as needed */
+    }
 
-
-
+.icons{
+  text-align: right;
+  display:inline-block;
+  
+}
 
     #navbar{
       display:inline-block;
@@ -180,3 +184,9 @@ margin-right: 50px;
     grid-template-columns: repeat(2, 1fr);
   }
 }
+    @media (max-width: 600px) {
+    .grid-container {
+        margin-bottom: 5px; /* Adjust the spacing for smaller screens */
+    }
+}
+    
