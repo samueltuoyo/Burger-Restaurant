@@ -72,9 +72,9 @@ footer{
     .box {
       padding: 20px;
       text-align: center;
-      margin-right:0;
-      width:130px;
-       box-sizing: border-box;  }
+      width:150px;
+     margin-right: 5px;
+      box-sizing: border-box;  }
 
 
 h2{
@@ -152,13 +152,12 @@ body {
 
 #mobilenav a{
   background-color: var(--dark-blue);
-
   text-decoration: none;
   color:var(--white);
   display:inline-block;
   outline: none;
   font-size: 30px;
-margin-right: 50px;
+  margin-right: 40px;
   border:none;
   box-shadow: none;
 }
