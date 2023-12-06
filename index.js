@@ -56,10 +56,11 @@ document.getElementById('8burgerButton').addEventListener('click', function() {
   function showBurgerAlert(amount) {
     // Using SweetAlert2 to create a customized alert
     Swal.fire({
-      title: 'Burger Alert!',
+      title: 'Burger!',
       html: `<p>Amount: ${amount}</p><img src="burger.jpg" alt="Burger Photo" style="max-width:100%;">`,
-      confirmButtonText: 'Cool!',
-      position: 'center',
+      confirmButtonText: 'Purchase!',
+              position: 'center',
+
       customClass: {
         container: 'my-swal', // Apply the custom style to the SweetAlert2 modal only
       },
