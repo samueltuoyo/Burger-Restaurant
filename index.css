@@ -1,4 +1,6 @@
-
+*{
+  box-sizing: border-box;
+}
 :root{
   --dark-blue: #000428;
   --cyan: #0095ff;
@@ -24,18 +26,21 @@ header{
   
 }
 
+
 html,body{
   margin: 0;
   padding: 0;
+  font-family: San-serif;
 }
 footer{
   background-color:#333;
-  padding:45px;
+  padding:20px;
   color:white;
   margin:0;
   position:relative;
   margin-top: auto;
   margin-bottom: auto;
+  font-size:20px;
 }
 
 
@@ -132,6 +137,9 @@ body {
 .icons{
   text-align: right;
   display:inline-block;
+  background-color: #333;
+  color:white;
+  font-size:25px;
   
 }
 
@@ -146,7 +154,6 @@ body {
   width: 100%;
   transition: bottom 0.5s;
   background-color: var(--dark-blue);
-  position: fixed;
   
 }
 
@@ -189,3 +196,9 @@ body {
     }
 }
     
+    @media(min-width:767){
+      .icons{
+        font-size:40px;
+
+      }
+    }
