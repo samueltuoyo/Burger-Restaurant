@@ -18,13 +18,16 @@ button{
 header{
   background-color:#333;
   padding:20px;
-  margin:0;
   color:white;
   font-size:50px;
   transition: top 0.5s;
-   
+  position:fixed;
+  width:100%;
+  display:flex;
   
 }
+  
+
 
 
 html,body{
@@ -36,7 +39,7 @@ footer{
   background-color:#333;
   padding:20px;
   color:white;
-  margin:0;
+  margin-bottom: 3rem;
   position:relative;
   margin-top: auto;
   margin-bottom: auto;
@@ -150,9 +153,8 @@ body {
 #mobilenav{
   display: none;
   padding:5px;
-  bottom: 0;
   width: 100%;
-  transition: bottom 0.5s;
+  bottom: 0;
   background-color: var(--dark-blue);
   
 }
