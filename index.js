@@ -39,19 +39,7 @@ document.getElementById('4burgerButton').addEventListener('click', function() {
     showBurgerAlert('5$');
   });
 
-document.getElementById('5burgerButton').addEventListener('click', function() {
-    showBurgerAlert('9$');
-  });
-document.getElementById('6burgerButton').addEventListener('click', function() {
-    showBurgerAlert('11$');
-  });
 
-document.getElementById('7burgerButton').addEventListener('click', function() {
-    showBurgerAlert('5$');
-  });
-document.getElementById('8burgerButton').addEventListener('click', function() {
-    showBurgerAlert('5$');
-  });
 
   function showBurgerAlert(amount) {
     // Using SweetAlert2 to create a customized alert
