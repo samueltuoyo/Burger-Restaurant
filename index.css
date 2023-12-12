@@ -16,6 +16,10 @@ button{
   border: none;
 
 }
+a{
+  text-decoration: none;
+  color:white;
+}
 header{
   background-color:#333;
   padding:20px;
@@ -148,6 +152,13 @@ body {
 .icons a{
   margin-right:20px;
 }
+
+
+  #ico{
+font-size:20px;
+    color:#000;
+    display:inline-block;
+  }
 
     #navbar{
       display:inline-block;
