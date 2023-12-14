@@ -10,11 +10,13 @@
 header{
   background-color:#333;
   padding:20px;
-  margin:0 auto;
   color:white;
   font-size:50px;
+  transition: top 0.5s;
+  
   
 }
+  
 
 body{
   margin: 0;
@@ -153,4 +155,8 @@ margin-right: 50px;
 @media(max-width:600px){
     #navbar{display: none;}
 
-    
+    @media(max-width:600px){
+    h2{display: none;}
+
+  @media(max-width:769px){
+    h2{display: none;}
