@@ -1,3 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@200&family=Lobster&family=Montserrat:wght@300&family=Playfair+Display:ital,wght@0,600;1,400&family=Roboto+Mono:wght@200;400&family=Roboto+Slab&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400;1,500&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400;1,500&display=swap");
+
+
 *{
   box-sizing: border-box;
 }
@@ -27,20 +32,22 @@ header{
   font-size:50px;
   display:flex;
   justify-content: space-between;
+  
 }
   
 
    .outlined-text {
-     -webkit-text-stroke: 2px #000; /* Text outline (for WebKit/Blink browsers) */
-      text-stroke: 2px #000; /* Text outline for non-WebKit/Blink browsers */
-    }
+     font-family:"Ephesis", cursive;
+     font-size:50px; 
+   }
 
-html,body{
+body{
   margin: 0;
   padding: 0;
-  font-family: San-serif;
+  font-family: "Jost" Sans-serif;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuP8xP-bfXrXYnejIWqN9f35Nrce_D1ynTPGcWXogkWQ9UF8R3s5PyuE1KH31Lr7_gv2uSVg&s");
 }
-footer{
+  footer{
   background-color:black;
   padding:20px;
   color:white;
@@ -58,12 +65,13 @@ footer{
 .container{
   border: 2px solid black;
   margin:0;
-  background-image:url("https://media.istockphoto.com/id/1473452859/photo/tasty-cheeseburger-glass-of-cola-and-french-fries-on-wooden-tray-close-up.webp?b=1&s=170667a&w=0&k=20&c=AO5BL1L55jnam8yVMVTH0Sj0mnaPNrVaw42q9rgvFps=");
+  background-image:url('https://media.istockphoto.com/id/1473452859/photo/tasty-cheeseburger-glass-of-cola-and-french-fries-on-wooden-tray-close-up.webp?b=1&s=170667a&w=0&k=20&c=AO5BL1L55jnam8yVMVTH0Sj0mnaPNrVaw42q9rgvFps=');
   background-size:cover;
   background-position: center;
   justify-content:center;
   background-repeat: none;
   height:auto;
+  font-family: "Jost" Sans-serif;
   
 }
 
@@ -86,14 +94,13 @@ footer{
     .box {
       padding: 20px;
       text-align: center;
-      width:150px;
-     margin-left: 10px;
-     border:2px solid #ddd;
+      width:100;
+      border:2px solid #ddd;
       box-sizing: border-box; 
       border-radius: 8px;
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
       margin-bottom: 5px;
-      
+      background-color: white;
     }
 
 
@@ -101,7 +108,7 @@ h2{
   text-align:center;
   color: rgba(255, 255, 255, 0.5); /* Set the transparency by adjusting the fourth parameter (0.3 in this example) */
   font-size:60px;
-  font-family:impact;
+  font-family:Sans-serif;
   padding:80px;
 }
 
@@ -121,12 +128,14 @@ h4{
 
         nav a {
             color: #fff;
-          font-size:10px;
+          font-size:20px;
             text-decoration: none;
             padding: 5px 10px;
             margin-right: 10px;
-          border: 1px solid lightcyan;
-          background-color: black;
+          border: 1px soid white;
+          background-color: orange;
+          border-radius:10px;
+           
         }
 
 
@@ -138,6 +147,7 @@ h4{
 body {
   display: flex;
   flex-direction: column;
+  font-family: "Jost", sans-serif;
 }
   html, body {
   height: 100%;
@@ -153,6 +163,7 @@ body {
   text-align: justify;
   background-color: black;
   color:white;
+  
 }
 .icons a{
   margin-right:20px;
@@ -163,6 +174,8 @@ body {
 font-size:20px;
     color:#000;
     display:inline-block;
+    margin-left:10px;
+    
   }
 
     #navbar{
@@ -175,19 +188,21 @@ font-size:20px;
   width: 100%;
   bottom: 0;
   background-color: var(--dark-blue);
-  
+  position:fixed;
+text-align: center;
 }
 
 #mobilenav a{
-  background-color: var(--dark-blue);
-  text-decoration: none;
-  color:var(--white);
-  display:inline-block;
-  outline: none;
-  font-size: 30px;
-  margin-right: 40px;
-  border:none;
-  box-shadow: none;
+  color: #fff;
+          font-size:20px;
+            text-decoration: none;
+            padding: 5px 10px;
+            margin-right: 10px;
+          border: 1px soid white;
+          background-color: orange;
+          border-radius:10px;
+       text-align: center;
+
 }
 
 @media(max-width:769px){
@@ -196,7 +211,7 @@ font-size:20px;
     
   
   #mobilenav{
-      display:block;
+      display:inline-block;;
     }
   
 @media(max-width:280px){
@@ -223,3 +238,5 @@ font-size:20px;
 
       }
     }
+    
+    
