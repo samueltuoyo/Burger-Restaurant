@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@200&family=Lobster&family=Montserrat:wght@300&family=Playfair+Display:ital,wght@0,600;1,400&family=Roboto+Mono:wght@200;400&family=Roboto+Slab&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400;1,500&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400;1,500&display=swap");
 
 :root{
   --dark-blue: #000428;
@@ -12,15 +15,17 @@ header{
   padding:20px;
   color:white;
   font-size:50px;
-  transition: top 0.5s;
-  
-  
+  display:flex;
+  justify-content: space-between;
+  font-family: "Jost" Sans-serif;
 }
+  
   
 .icons{
   text-align: justify;
   background-color: black;
   color:white;
+  height:500px;
 }
 .icons a{
   margin-right:20px;
@@ -28,37 +33,47 @@ header{
 a
 {color: white;}
 
-  #ico{
+    #ico{
 font-size:20px;
     color:#000;
     display:inline-block;
+    margin-left:10px;
+    
   }
 body{
   margin: 0;
   background-color: black;
   padding: 0;
+  font-family: "Jost", Sans-serif;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuP8xP-bfXrXYnejIWqN9f35Nrce_D1ynTPGcWXogkWQ9UF8R3s5PyuE1KH31Lr7_gv2uSVg&s");
+
 }
 footer{
   background-color:black;
   padding:20px;
   color:white;
-  margin:0;
-  text-align:center;
-  font-size:30px;
+  margin-bottom: 3rem;
+  position:relative;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-size:25px;
+  text-align: center;
 }
 
 nav {
-            display: inline;
+            display: inline-block;
         }
 
         nav a {
             color: #fff;
-          font-size:10px;
+          font-size:20px;
             text-decoration: none;
             padding: 5px 10px;
             margin-right: 10px;
-          border: 1px solid lightcyan;
-          background-color: black;
+          border: 1px soid white;
+          background-color: orange;
+          border-radius:10px;
+           
         }
 
 
@@ -124,29 +139,29 @@ h4{
   
 }
 
+
 #mobilenav{
   display: none;
-  padding:1rem 0;
-  bottom: 0;
+  padding:5px;
   width: 100%;
-  transition: bottom 0.5s;
+  bottom: 0;
   background-color: var(--dark-blue);
-
-  
+  position:fixed;
+text-align: center;
 }
 
 #mobilenav a{
-  background-color: var(--dark-blue);
-
-  text-decoration: none;
-  color:var(--white);
-  display:inline-block;
-  outline: none;
-  font-size: 30px;
-margin-right: 50px;
-  border:none;
-  box-shadow: none;
+  color: #fff;
+          font-size:px;
+            text-decoration: none;
+            padding: 5px 10px;
+            margin-right: 10px;
+          border: 1px soid white;
+          background-color: orange;
+          border-radius:10px;
+       
 }
+
 
 
 @media(max-width:769px){
