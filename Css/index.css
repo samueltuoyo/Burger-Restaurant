@@ -147,8 +147,9 @@ body {
   display: flex;
   flex-direction: column;
   font-family: "Jost", sans-serif;
-  background-color: red; /* Default background color for desktop */
+  background-image: url('https://img.freepik.com/free-vector/restaurant-mural-wallpaper_23-2148695092.jpg?size=626&ext=jpg&ga=GA1.1.1172137152.1698439987&semt=ais');
 }
+  
 @media only screen and (min-width: 767px) {
     body {
         /* Background image for mobile devices */
