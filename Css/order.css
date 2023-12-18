@@ -1,3 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@200&family=Lobster&family=Montserrat:wght@300&family=Playfair+Display:ital,wght@0,600;1,400&family=Roboto+Mono:wght@200;400&family=Roboto+Slab&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400;1,500&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400;1,500&display=swap");
+
 :root{
   --dark-blue: #000428;
   --cyan: #0095ff;
@@ -10,7 +14,8 @@ header{
   padding:20px;
   margin:0;
   color:white;
-  font-size:50px;
+  font-size:50px;f
+  font-family: "Jost", Sans-serif;
   
   
 }
@@ -19,6 +24,8 @@ body{
   margin: 0;
   background-color: antiquewhite;
   padding: 0;
+  font-family: "Jost", Sans-serif;
+  
 }
 footer{
   background-color:black;
@@ -162,30 +169,29 @@ font-size:20px;
       display:inline-block;
     }
 
+
 #mobilenav{
   display: none;
-  padding:1rem 0;
-  bottom: 0;
+  padding:5px;
   width: 100%;
-  transition: bottom 0.5s;
+  bottom: 0;
   background-color: var(--dark-blue);
-
-  
+  position:fixed;
+text-align: center;
 }
 
 #mobilenav a{
-  background-color: var(--dark-blue);
+  color: #fff;
+          font-size:20px;
+            text-decoration: none;
+            padding: 5px 10px;
+            margin-right: 10px;
+          border: 1px soid white;
+          background-color: orange;
+          border-radius:10px;
+       text-align: center;
 
-  text-decoration: none;
-  color:var(--white);
-  display:inline-block;
-  outline: none;
-  font-size: 30px;
-margin-right: 50px;
-  border:none;
-  box-shadow: none;
 }
-
 
 @media(max-width:769px){
     #navbar{display: none;}
