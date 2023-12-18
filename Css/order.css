@@ -112,9 +112,21 @@ display: grid;
   background-color: black;
   color:white;
 }
-.icons a{
-  margin-right:20px;
+@media only screen and (min-width: 768px) {
+  #icons {
+    grid-template-columns: repeat(3, 1fr);
+    display: grid;
+    gap: 1px;
+  }
 }
+
+.icons a, section{
+   margin-left: 10px;
+
+}
+
+
+
 a
 {color: white;}
 
