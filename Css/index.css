@@ -171,10 +171,19 @@ body {
   text-align: justify;
   background-color: black;
   color:white;
-  
 }
-.icons a{
-  margin-right:20px;
+
+@media only screen and (min-width: 768px) {
+  #icons {
+    grid-template-columns: repeat(3, 1fr);
+    display: grid;
+    gap: 1px;
+  }
+}
+
+.icons a, section{
+   margin-left: 10px;
+
 }
 
 
@@ -219,7 +228,7 @@ text-align: center;
     
   
   #mobilenav{
-      display:inline-block;;
+      display:inline-block;
     }
   
 @media(max-width:280px){
@@ -247,4 +256,8 @@ text-align: center;
       }
     }
     
-    
+    @media only screen and (min-width:767){
+      h2{
+        font-size:70px;
+      }
+    }
