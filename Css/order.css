@@ -43,6 +43,10 @@ footer{
   font-size:30px;
   position:relative;
 }
+html{
+  max-height: 100%;
+  max-width: 100%;
+}
 
 .grid-container{
 grid-template-columns: repeat(2, 1fr); /* Creates two columns with equal width */
