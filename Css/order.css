@@ -8,7 +8,14 @@
   --dark-cyan: #0048ff;
   --white: #ffffff;
 }
+button{
+  border-radius:2px;
+  background-color: #27ae60;
+  cursor: pointer;
+  padding: 8px;
+  border: none;
 
+}
 header{
   background-color:black;
   padding:20px;
@@ -224,5 +231,4 @@ text-align: center;
     #navbar{display: none;}
   
   }
-
 
