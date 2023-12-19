@@ -9,6 +9,10 @@
   --white: #ffffff;
 }
 
+html{
+  max-height: 100%;
+  max-width: 100%;
+}
 
 header{
   background-color:black;
