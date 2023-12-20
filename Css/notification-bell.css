@@ -111,6 +111,16 @@ h2{
   }
   
 }
+
+
+
+#div-section{
+  color:white;
+  background-color: #333;
+  margin-bottom: 30px;
+  width:150px;
+  border:2px solid black;
+}
         form {
             background-color: #fff;
             border-radius: 8px;
