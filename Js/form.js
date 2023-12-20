@@ -9,7 +9,7 @@ document.getElementById('request').addEventListener('click', function() {
   function showBurgerAlert(amount) {
     // Using SweetAlert2 to create a customized alert
     Swal.fire({
-      title: 'Burger Request!',
+      title: 'Request Sent!',
       html: `<p>Amount: ${amount}</p><img src="img/done.jpg" alt="Burger Photo" style="max-width:100%;">`,
       confirmButtonText: 'Done!',
               position: 'center',
