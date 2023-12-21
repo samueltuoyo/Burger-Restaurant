@@ -5,6 +5,10 @@ document.getElementById('request').addEventListener('click', function() {
   });
 
 
+document.getElementById('request2').addEventListener('click', function() {
+    showBurgerAlert('599.88$');
+  });
+
 
   function showBurgerAlert(amount) {
     // Using SweetAlert2 to create a customized alert
