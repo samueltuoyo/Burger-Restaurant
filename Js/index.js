@@ -54,3 +54,29 @@ document.getElementById('4burgerButton').addEventListener('click', function() {
       },
     });
   }
+
+
+
+if ('speechSynthesis' in window) {
+    const textToSpeak = [
+       "WELCOME TO BURGER RESTUARNT DEVELOPED BY MR.WETINMI", 
+    "GO THROUGH SOME OF OUR BEST BURGERS"];
+
+    const speechSynthesis = window.speechSynthesis;
+
+    function speakText(index) {
+        if (index < textToSpeak.length) {
+            const text = new SpeechSynthesisUtterance(textToSpeak[index]);
+            speechSynthesis.speak(text);
+
+            text.onend = function () {
+                speakText(index + 1);
+            };
+        }
+    }
+
+    window.addEventListener('load', function () {
+        speakText(0);
+    });
+}
+
