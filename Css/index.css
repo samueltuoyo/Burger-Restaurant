@@ -224,11 +224,12 @@ font-size:20px;
   background-color: var(--dark-blue);
   position:fixed;
 text-align: center;
+  
 }
 
 #mobilenav a{
   color: #fff;
-          font-size:20px;
+          font-size:26px;
             text-decoration: none;
             padding: 5px 10px;
             margin-right: 10px;
@@ -236,7 +237,6 @@ text-align: center;
           background-color: orange;
           border-radius:10px;
        text-align: center;
-
 }
 
 @media(max-width:600px){
