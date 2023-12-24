@@ -32,8 +32,17 @@ header{
   font-size:50px;
   display:flex;
   justify-content: space-between;
+  font-family: "Jost" Sans-serif;
   position:fixed;
+top:0;}
+
+.test{
+  padding-top:100px;
+}
+@media only screen and (min-width:769px){
+header{
   width:100%;
+  }
 }
   
 button{
