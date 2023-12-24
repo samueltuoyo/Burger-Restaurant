@@ -19,13 +19,23 @@ button{
 header{
   background-color:black;
   padding:20px;
-  margin:0;
   color:white;
-  font-size:50px;f
-  font-family: "Jost", Sans-serif;
-  
-  
+  font-size:50px;
+  display:flex;
+  justify-content: space-between;
+  font-family: "Jost" Sans-serif;
+  position:fixed;
+top:0;}
+
+#test{
+  padding-top:160px;
 }
+@media only screen and (min-width:769px){
+header{
+  width:100%;
+  }
+}
+  
 
 body{
   margin: 0;
