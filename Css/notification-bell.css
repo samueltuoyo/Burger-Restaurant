@@ -24,7 +24,9 @@ header{
   font-family: "Jost" Sans-serif;
   position:fixed;
 top:0;}
-
+header a{
+  margin-left: 10px;
+}
 .test{
   padding-top:150px;
 }
@@ -196,7 +198,7 @@ text-align: center;
 
 #mobilenav a{
   color: #fff;
-          font-size:px;
+          font-size:26px;
             text-decoration: none;
             padding: 5px 10px;
             margin-right: 10px;
