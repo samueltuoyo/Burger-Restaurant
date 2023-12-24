@@ -24,9 +24,7 @@ header{
   font-family: "Jost" Sans-serif;
   position:fixed;
 top:0;}
-header a{
-  margin-left: 10px;
-}
+
 .test{
   padding-top:150px;
 }
