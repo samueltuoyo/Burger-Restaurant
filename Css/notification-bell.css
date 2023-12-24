@@ -22,9 +22,19 @@ header{
   display:flex;
   justify-content: space-between;
   font-family: "Jost" Sans-serif;
+  position:fixed;
+top:0;}
+header a{
+  margin-left: 10px;
 }
-
-
+.test{
+  padding-top:150px;
+}
+@media only screen and (min-width:769px){
+header{
+  width:100%;
+  }
+}
   
 .icons{
   text-align: justify;
