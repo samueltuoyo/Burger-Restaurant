@@ -14,7 +14,7 @@ document.getElementById('request2').addEventListener('click', function() {
     // Using SweetAlert2 to create a customized alert
     Swal.fire({
       title: 'Request Sent!',
-      html: `<p>Amount: ${amount}</p><img src="img/done.jpg" alt="Burger Photo" style="max-width:100%;">`,
+      html: `<progress></progress><p>Amount: ${amount}</p><img src="img/done.jpg" alt="Burger Photo" style="max-width:100%;">`,
       confirmButtonText: 'Done!',
               position: 'center',
 
