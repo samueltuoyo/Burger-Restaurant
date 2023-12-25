@@ -59,8 +59,10 @@ document.getElementById('4burgerButton').addEventListener('click', function() {
 
 if ('speechSynthesis' in window) {
     const textToSpeak = [
-       "WELCOME TO BURGER RESTUARNT DEVELOPED BY MR.WETINMI", 
-    "GO THROUGH SOME OF OUR BEST BURGERS"];
+       "WELCOME TO BURGER RESTUARNT DEVELOPED BY MR.WEYINMI", 
+    "GO THROUGH SOME OF OUR BEST BURGERS",
+    "WE OFFER YOU SOME OF THE CHEAPEST AND AFFORDABLE PRICES",
+    "ALSO FASTEST CHEAPING AND TRANSPORTING OF GOODS"];
 
     const speechSynthesis = window.speechSynthesis;
 
