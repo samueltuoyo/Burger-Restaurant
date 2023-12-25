@@ -79,6 +79,17 @@ body{
   background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuP8xP-bfXrXYnejIWqN9f35Nrce_D1ynTPGcWXogkWQ9UF8R3s5PyuE1KH31Lr7_gv2uSVg&s");
 
 }
+@media only screen and (min-width:767px){
+  body{
+    background-image: url("https://img.freepik.com/free-vector/fast-food-pattern_1108-194.jpg?size=338&ext=jpg&ga=GA1.1.1172137152.1698439987&semt=ais");
+  }
+}
+
+@media only screen and (min-width:767px){
+  .Top{
+    color:black;
+  }
+}
 footer{
   background-color:black;
   padding:20px;
