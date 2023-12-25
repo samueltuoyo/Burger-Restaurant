@@ -24,9 +24,7 @@ header{
   font-family: "Jost" Sans-serif;
   position:fixed;
 top:0;}
-header a{
-  margin-left: 10px;
-}
+
 .test{
   padding-top:150px;
 }
@@ -40,8 +38,13 @@ header{
   text-align: justify;
   background-color: black;
   color:white;
-  
-  
+}
+
+#request2, .request2{
+  width:100%;
+  text-align:center;
+float:left;
+  font-size: 25px;
 }
 @media only screen and (min-width: 768px) {
   #icons {
