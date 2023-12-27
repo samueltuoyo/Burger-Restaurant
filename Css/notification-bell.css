@@ -8,7 +8,10 @@
   --dark-cyan: #0048ff;
   --white: #ffffff;
 }
-
+*{
+  box-sizing: border-box;
+  text-decoration: none;
+}
 html{
   height: 100%;
   width: 100%;
@@ -79,17 +82,7 @@ body{
   background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuP8xP-bfXrXYnejIWqN9f35Nrce_D1ynTPGcWXogkWQ9UF8R3s5PyuE1KH31Lr7_gv2uSVg&s");
 
 }
-@media only screen and (min-width:767px){
-  body{
-    background-color:black;
-  }
-}
 
-@media only screen and (min-width:767px){
-  .Top{
-    color:black;
-  }
-}
 footer{
   background-color:black;
   padding:20px;
@@ -199,7 +192,36 @@ h4{
   color:white;
   
 }
-
+a{
+  text-decoration: none;
+}
+ .content{
+   display: grid;
+    grid-template-columns: repeat(4,1fr);
+ }
+@media only screen and  (max-width:767px){
+  .content{
+    grid-template-columns: repeat(2, 1fr);
+    display: grid;
+  }
+  
+}
+.service{
+   text-align: center;
+background-color: white;
+      width: 100%;
+   margin-top:80px;
+   font-family: 'Dancing Script', cursive;
+text-decoration: none;
+  color:black;
+   
+}
+.service .row .content img{
+    width: 55%;
+}
+.service .row .content h3{
+    font-size: 2rem;
+}
 #mobilenav{
   display: none;
   padding:5px;
@@ -221,7 +243,6 @@ text-align: center;
           border-radius:10px;
        
 }
-
 
 
 @media(max-width:769px){
