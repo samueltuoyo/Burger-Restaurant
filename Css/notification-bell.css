@@ -206,7 +206,7 @@ a{
   }
   
 }
-.service{
+#service{
    text-align: center;
 background-color: white;
       width: 100%;
@@ -214,6 +214,7 @@ a{
    font-family: 'Dancing Script', cursive;
 text-decoration: none;
   color:black;
+  
    
 }
 .service .row .content img{
