@@ -134,14 +134,17 @@ h2{
   
 }
 
-
+.formbackground{
+  background-color: black;
+}
 
 #div-section{
   color:white;
   background-color: #333;
   margin-bottom: 30px;
-  width:150px;
+  width:100%;
   border:2px solid black;
+  
 }
         form {
             background-color: #fff;
@@ -217,11 +220,11 @@ text-decoration: none;
   
    
 }
-.service .row .content img{
+.service .content img{
     width: 55%;
 }
-.service .row .content h3{
-    font-size: 2rem;
+.service .content span{
+    font-size: 50px;
 }
 #mobilenav{
   display: none;
