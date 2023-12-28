@@ -37,12 +37,17 @@ document.getElementById('4burgerButton').addEventListener('click', function() {
 
 if ('speechSynthesis' in window) {
     const textToSpeak = [
-       "WELCOME TO BURGER RESTUARNT DEVELOPED BY MR.WEYINMI", 
-    "GO THROUGH SOME OF OUR BEST BURGERS",
-    "WE OFFER YOU SOME OF THE CHEAPEST AND AFFORDABLE PRICES",
-    "ALSO FASTEST CHEAPING AND TRANSPORTING OF GOODS"];
+        "WELCOME TO BURGER RESTAURANT DEVELOPED BY MR. WEYINMI",
+        "GO THROUGH SOME OF OUR BEST BURGERS",
+        "WE OFFER YOU SOME OF THE CHEAPEST AND AFFORDABLE PRICES",
+        "ALSO FASTEST CHEAPING AND TRANSPORTING OF GOODS"
+    ];
 
     const speechSynthesis = window.speechSynthesis;
+    const initializeSpeech = () => {
+        const text = new SpeechSynthesisUtterance(''); // Empty utterance to force initialization
+        speechSynthesis.speak(text);
+    };
 
     function speakText(index) {
         if (index < textToSpeak.length) {
@@ -55,8 +60,10 @@ if ('speechSynthesis' in window) {
         }
     }
 
+    // Initialize speech synthesis outside the load event
+    initializeSpeech();
+
     window.addEventListener('load', function () {
         speakText(0);
     });
 }
-
