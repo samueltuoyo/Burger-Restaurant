@@ -9,6 +9,7 @@
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <link rel="stylesheet" href="Css/notification-bell.css">
 <link rel="stylesheet" href="Css/animations.css">
+<link rel="stylesheet" href="Css/comments.css">
   <!--title informations-->
 <link rel="icon" href="img/burger_4.png" type="image/png">
 <title>Burgers Resturant</title> 
@@ -129,7 +130,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
           <input
             type="email"
-            name=" Your Email address"
+            name="Email address"
             placeholder="Email address"
             id="email"
             required
@@ -176,7 +177,97 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
     </section>
 </div>
 <p></p>
-     
+<!--comment section-->
+
+
+    <div class="container">
+        <div class="head"><h1>Post a Comment</h1></div>
+        <div><span id="comment">0</span> Comments</div>
+        <div class="text"><p>We are happy to hear from you</p></div>
+        <div class="comments"></div>
+        <div class="commentbox">
+            <img src="img/user1.png" alt="">
+            <div class="content">
+                <h2>Comment as: </h2>
+                <input type="text" class="user">
+
+                <div class="commentinput">
+                    <input type="text" placeholder="Enter comment" class="usercomment">
+                    <div class="buttons">
+                        <button type="submit" disabled id="publish">Publish</button>
+                        <div class="notify">
+                            <input type="checkbox" class="notifyinput"> <span>Notify me</span>
+                        </div>
+                    </div>
+                </div>
+             </div>
+        </div>
+    </div>
+<!--scripts for comment section-->
+<script>
+
+
+
+const USERID = {
+    name: null,
+    identity: null,
+    image: null,
+    message: null,
+    date: null
+}
+
+const userComment = document.querySelector(".usercomment");
+const publishBtn = document.querySelector("#publish");
+const comments = document.querySelector(".comments");
+const userName = document.querySelector(".user");
+const notify = document.querySelector(".notifyinput");
+
+    userComment.addEventListener("input", e => {
+        if(!userComment.value) {
+            publishBtn.setAttribute("disabled", "disabled");
+            publishBtn.classList.remove("abled")
+        }else {
+            publishBtn.removeAttribute("disabled");
+            publishBtn.classList.add("abled")
+        }
+    })
+
+    function addPost() {
+        if(!userComment.value) return;
+        USERID.name = userName.value;
+        if(USERID.name === "Anonymous") {
+            USERID.identity = false;
+            USERID.image = "img/anonymous.png"
+        }else {
+            USERID.identity = true;
+            USERID.image = "img/user.png"
+        }
+
+        USERID.message = userComment.value;
+        USERID.date = new Date().toLocaleString();
+        let published = 
+        `<div class="parents">
+            <img src="${USERID.image}">
+            <div>
+                <h1>${USERID.name}</h1>
+                <p>${USERID.message}</p>
+                <div class="engagements"><img src="img/like.png" id="like"><img src="img/share.png" alt=""></div>
+                <span class="date">${USERID.date}</span>
+            </div>    
+        </div>`
+
+        comments.innerHTML += published;
+        userComment.value = "";
+        publishBtn.classList.remove("abled")
+
+        let commentsNum = document.querySelectorAll(".parents").length;
+        document.getElementById("comment").textContent = commentsNum;
+
+    }
+
+    publishBtn.addEventListener("click", addPost);
+
+</script>
             <!--Contact information-->  
  <div class="icons" id="icons">
    <section>  <!--Services-->
