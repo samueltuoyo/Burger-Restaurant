@@ -10,7 +10,7 @@ if ('speechSynthesis' in window) {
     "WE HAVE HARMBURGER",
     "AND LOTS MORE",
     "WELCOME KINGSLEY ESISI, RAHMAN A.K.A BATMAN, WELCOME SIR.JUSTICE, AND NEW USERS",
-    "I HOPE YOU ARE ENJOYING WHAT MY BOSS MADE"
+    "I HOPE YOU ARE ENJOYING WHAT MY BOSS CHIEF ORITSEWEYINMI DESIGNED"
     ];
 
     const speechSynthesis = window.speechSynthesis;
