@@ -23,7 +23,7 @@ document.getElementById('4burgerButton').addEventListener('click', function() {
     // Using SweetAlert2 to create a customized alert
     Swal.fire({
       title: 'Burger!',
-      html: `<p>Amount: ${amount}</p><img src="img/burger.jpg" alt="Burger Photo" style="max-width:100%;">`,
+      html: `<p>Amount: ${amount}</p><img src="img/hero-bg.jpg" alt="Burger Photo" style="max-width:100%;">`,
       confirmButtonText: 'Purchase!',
               position: 'center',
 
