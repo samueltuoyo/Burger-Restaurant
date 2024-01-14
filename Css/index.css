@@ -126,7 +126,8 @@ h2{
   text-align:center;
   color: rgba(255, 255, 255, 0.5); /* Set the transparency by adjusting the fourth parameter (0.3 in this example) */
   font-size:60px;
-  font-family:Sans-serif;
+  font-family: 'Dancing Script', cursive;
+
   padding:80px;
 }
 
