@@ -152,9 +152,13 @@ h4{
             padding: 5px 10px;
             margin-right: 10px;
           border: 1px soid white;
-          background-color: orange;
+          border: 2px solid white;
           border-radius:10px;
            
+        }
+        
+        nav .active{
+            background-color: orange;
         }
 
 
@@ -219,23 +223,35 @@ font-size:20px;
 
 #mobilenav{
   display: none;
-  padding:5px;
+  padding: 20px;
   width: 100%;
   bottom: 0;
-  background-color: var(--dark-blue);
-  position:fixed;
+  background-color: black;
+  position: fixed;
 text-align: center;
-  
 }
 
-#mobilenav a{
+#mobilenav .mobilenavcontent a{
   color: #fff;
+          font-size:22px;
+            text-decoration: none;
+            padding: 5px 10px;
+            margin-right: 5px;
+          border: 1px soid white;
+       text-align: center;
+}
+
+nav a:hover{
+    background-color: orange;
+}
+.active{
+    color: #fff;
           font-size:26px;
             text-decoration: none;
             padding: 5px 10px;
             margin-right: 10px;
           border: 1px soid white;
-          background-color: orange;
+          
           border-radius:10px;
        text-align: center;
 }
