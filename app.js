@@ -1,6 +1,7 @@
 const BurgerBtn = document.querySelectorAll('#burger-purchase-btn');
 const header = document.getElementById('header');
 const footer = document.getElementById('mobilenav');
+const removeBtn = document.querySelectorAll('.remove-item');
 let lastScrollTop = 0;
 const amount = 10 + '$';
 function showBurgerAlert() {
@@ -19,7 +20,11 @@ BurgerBtn.forEach((btn) => {
     btn.addEventListener('click', showBurgerAlert)
 });
 
-
+removeBtn.forEach((btn) => {
+    btn.addEventListener('click', () => {
+        btn.parentElement.remove();
+    });
+});
 
 
 

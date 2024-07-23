@@ -16,12 +16,20 @@
   --dark: #000;
 }
 
-#icon-button{
-  border-radius:2px;
+.newsletter #icon-button{
+  border-radius:5px;
   background-color: #27ae60;
   cursor: pointer;
   padding: 8px;
   border: none;
+}
+
+.newsletter input{
+    border: 1px solid #ccc;
+    padding: 8px;
+    border-radius: 5px;
+    width: 80%;
+    background: #ccc;
 }
 
 a{
@@ -54,7 +62,7 @@ footer{
   padding: 20px;
   color: var(--white);
   width: 100%;
-  font-size: 30px;
+  font-size: 20px;
   text-align: center;
 }
 
@@ -85,7 +93,12 @@ button{
   height: 500px;
 }
 
-
+.home-bg{
+   background-image: url("img/body.bg.avif");
+  background-size:cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 .hero-grid-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr); 
@@ -159,12 +172,14 @@ nav .active{
 }
 
 
-.icons a, section{
+.icons a, .icons section{
    margin-left: 10px;
 
 }
 
-
+.icons section{
+    margin-top: 30px;
+}
  #ico{
   font-size:20px;
   color:#000;
@@ -315,6 +330,10 @@ nav a:hover{
 .desktop-footer{
     display: none;
  }
+ 
+.mobile-footer p{
+ font-size: 30px;
+ }
 }
 
 @media only screen and (min-width: 768px) {
@@ -327,6 +346,7 @@ nav a:hover{
    #payment-grid-container{
    grid-template-columns: repeat(2, 1fr); 
    display: grid;
+   padding: 20px;
   grid-gap:none;
   }
 
