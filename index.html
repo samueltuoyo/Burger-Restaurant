@@ -1,113 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
-<meta name="viewport" content="width=device-width initial-scale=1.0">
-<script src="https://kit.fontawesome.com/edec7f25e3.js" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap">
-<link rel="stylesheet" href="styles.css">
- <link rel="icon" href="img/burger_4.png" type="image/png">
-<title>Burger Restaurant</title> 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="style.css">
+  <title>Tic Tac Toe</title>
 </head>
 <body>
-    <header id="header">
-        <span>Burger Restaurant</span>
-      <nav id="navbar">
-        <a href="index.html" class="active">Home</a>
-        <a href="src/notification.html">Notification</a>
-        <a href="src/order.html">Order</a>
-     </nav>
-     <img src="img/avatar.jpg">
-  </header>
-     <div class="hero-container">
-           <h2>Burger<br>Restaurant</h2>
-      </div>   
-         <div class="home-bg">
-           <p style="font-size:59px; text-align:center; color:pink; font-family: 'Dancing Script', cursive;"><i>Categories</i></p>
-           <p style="text-align:center; color:white;" class="outlined-text"> Most Popular Items</p> 
-        </div>
-     
-     <div class="hero-grid-container">
-         <div class="box">
-             <img src="img/burger_1.png" style="border-bottom:0.1px solid black;" height="100" width="100"><br><b>Harmburger</b>  
-             <p>Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque</p><p style="color:green;">
-              ⭐⭐⭐<span style="color: white; text-shadow: 0 0 1px black; font-size:20px;">&#9733;&#9733;</span>
-             <button id="burger-purchase-btn"> Order Now 10$</button>
-         </div>
-       
-         <div class="box">
-             <img src="img/New.jpg" style="border-bottom:0.5px solid black;" height="100" width="100"><br><b>Chese burger</b> 
-             <p>Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque</p>
-             <p style="color:green;">
-             ⭐⭐⭐<span style="color: white; text-shadow: 0 0 1px black; font-size:20px;">&#9733;&#9733;</span>
-            <button id="burger-purchase-btn"> Order Now 10$</button>
-        </div>
-        
-        <div class="box">
-            <img src="img/burger_3.png" style="border-bottom:0.5px solid black;" height="100" width="100"><br><b> Chicken Buger</b>      <p>Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque</p>
-            <p style="color:green;">⭐⭐⭐<span style="color: white; text-shadow: 0 0 1px black; font-size:20px;">&#9733;&#9733;</span>
-           <button id="burger-purchase-btn"> Order Now 10$</button>
-      </div>
-      
-      <div class="box">
-        <img src="img/burger_4.png" style="border-bottom:0.5px solid black;" height="100" width="100"><br><b>Fries Burger</b> 
-        <p>Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque</p>
-        <p style="color:green;">⭐⭐⭐<span style="color: white; text-shadow: 0 0 1px black; font-size:20px;">&#9733;&#9733;</span>
-       <button id="burger-purchase-btn"> Order Now 10$</button>
-     </div>
+  <div class="win-container">
+    <h2>Tic-Tac Toe</h2>
+    <p class="turn-for">Turn for X</p>
+    <p id="winner"></p>
+    <button id="restart-btn">Restart Game</button>
   </div>
-    
-       <div class="icons" id="icons">
-           <section>
-          <p style="color:green; font-size:50px; font-family:'Dancing Script', cursive;">Services</p>
-          <p style="color:white;"> About us </p>
-          <p style="color:white;">  Delivery</p> 
-          <p style="color:white;"> FAQs </p>
-          <p style="color:white;">Privacy</p>
-          <p style="color:white;">Terms and Conditions </p>
-       </section>
   
-      <section>
-         <p style="color:green; font-size:50px; font-family:'Dancing Script', cursive;">Contact</p>
-         <p style="color:white;"><i class="fa-solid fa-location-dot"></i> 17 street, Warri Delta state, Nigeria </p>
-         <p style="color:white;"> <i class="fa-solid fa-phone"></i> +234 916 1591 117</p> 
-         <p style="color:white;"><i class="fa-solid fa-envelope"></i> tuoyosamuel9082@gmail.com </p>
-         <div id="ico"><a href="https://github.com/samueltuoyo" target="blank"><i class="fa-brands fa-github "></i></a></div>
-         <div id="ico"><a href="https://www.facebook.com/samueltuoyo9082" target="blank"><i class="fa-brands fa-facebook"></i></a></div>
-         <div id="ico"><a href="https://youtube.com/@TuoyoSamuel?si=OYs9WR8hrCaqi2Ov" target="blank"><i class="fa-brands fa-youtube"></i></a></div>
-         <div id="ico"><a href="https://www.instagram.com/samuel_tuoyo" target="blank"><i class="fa-brands fa-instagram"></i></a></div>
-        <div id="ico"><a href="https://wa.link/bpo20c" target="blank"><i class="fa-brands fa-whatsapp"></i></a></div>
-   </section>
- 
-        <section class="newsletter">
-          <p style="color:green; font-size:50px; font-family:'Dancing Script', cursive;">Newsletter</p>
-          <p style="color:white;">Lorem ipsum dolor sit amet, consectetur</p>
-          <input type="email"/>
-         <button id="icon-button">Suscribe</button>
-               
-       <footer id="footer" class="mobile-footer">
-     <p>&copy 2023 Burger Restaurant</p>
-      </footer>
-    </section>
+    <div class="grid-container">
+      <div id="win-border"></div>
+        <div class="box"><span class="text-box"></span></div>
+        <div class="box"><span class="text-box"></span></div>
+        <div class="box"><span class="text-box"></span></div>
+        <div class="box"><span class="text-box"></span></div>
+        <div class="box"><span class="text-box"></span></div>
+        <div class="box"><span class="text-box"></span></div>
+        <div class="box"><span class="text-box"></span></div>
+        <div class="box"><span class="text-box"></span></div>
+        <div class="box"><span class="text-box"></span></div>
   </div>
-      
- <footer id="footer" class="desktop-footer">
-     <p>&copy 2023 Burger Restaurant</p>
- </footer>  
-  <!--nav for mobile phones-->
-<nav id="mobilenav">
-  <div class="mobilenavcontent">
-      <a href="index.html" class="active">Home</a>
-      <a href="src/notification.html">Notification</a>
-       <a href="src/order.html">Order</a>
-  </div>
- <script src="app.js"></script>
+  <script src="app.js"></script>
 </body>
 </html>
-  
-
-
-
-
- 
